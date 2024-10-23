@@ -492,3 +492,130 @@ b) Incorreta. O método contains() não aceita regex, então não funcionará co
 c) Incorreta. Funciona, mas é mais verbosa e potencialmente menos eficiente que outras soluções.
 
 d) Correta. Usa uma única expressão regular para verificar todos os critérios eficientemente.
+
+
+---
+
+**Questão 11 (Nível: Lembrar)**  
+**Contexto:** Durante o desenvolvimento de uma aplicação bancária, você precisa manipular valores monetários para calcular saldo e outras operações. Para isso, é necessário entender os tipos de dados apropriados.
+
+**Comando:** Identifique o tipo de dado correto para representar valores monetários com precisão em Java.
+
+**Alternativas:**
+a) `int`  
+b) `boolean`  
+c) `double`  
+d) `char`  
+e) `byte`
+
+**Gabarito:** c
+
+**Justificativas:**
+a) Incorreta. O tipo `int` armazena apenas números inteiros e não é adequado para valores monetários que podem ter casas decimais.  
+b) Incorreta. O tipo `boolean` armazena apenas valores lógicos (true/false).  
+c) Correta. O tipo `double` é comumente usado para representar números com casas decimais, como valores monetários.  
+d) Incorreta. O tipo `char` armazena caracteres, não valores numéricos.  
+e) Incorreta. O tipo `byte` é um tipo de dado numérico, mas armazena apenas inteiros pequenos e não suporta casas decimais.
+
+---
+
+**Questão 12 (Nível: Entender)**  
+**Contexto:** Um desenvolvedor está criando um sistema para calcular o total de vendas de uma loja online. O programa deve somar o preço de cada produto no carrinho de compras.
+
+**Comando:** Observe o código abaixo e identifique sua funcionalidade.
+
+```java
+double total = 0;
+for (int i = 0; i < produtos.length; i++) {
+    total += produtos[i].preco;
+}
+```
+
+**Alternativas:**
+a) Calcula o preço total de todos os produtos no array `produtos`.  
+b) Calcula a média do preço dos produtos no array `produtos`.  
+c) Calcula o número de produtos no array `produtos`.  
+d) Verifica se todos os produtos no array `produtos` têm o mesmo preço.  
+e) Imprime o preço de cada produto no array `produtos`.
+
+**Gabarito:** a
+
+**Justificativas:**
+a) Correta. O laço `for` percorre todos os produtos e soma seus preços na variável `total`.  
+b) Incorreta. O código apenas soma os preços, não calcula a média.  
+c) Incorreta. O código não conta o número de produtos, apenas soma seus preços.  
+d) Incorreta. O código não verifica se os preços são iguais, apenas os soma.  
+e) Incorreta. O código não imprime os preços, ele apenas os soma na variável `total`.
+
+---
+
+**Questão 13 (Nível: Aplicar ao Recordar)**  
+**Contexto:** Uma empresa de tecnologia está desenvolvendo um software que calcula o tempo total de uso de máquinas em uma fábrica. O programa precisa armazenar e exibir o tempo em horas, minutos e segundos.
+
+**Comando:** Indique o código que armazena corretamente o tempo total de uso em três variáveis: horas, minutos e segundos.
+
+**Alternativas:**
+a) `int horas, minutos, segundos;`  
+b) `double horas, minutos, segundos;`  
+c) `boolean horas, minutos, segundos;`  
+d) `String horas, minutos, segundos;`  
+e) `char horas, minutos, segundos;`
+
+**Gabarito:** a
+
+**Justificativas:**
+a) Correta. O tipo `int` é o mais adequado para armazenar horas, minutos e segundos, pois são valores inteiros.  
+b) Incorreta. O tipo `double` armazena números com casas decimais, o que não é necessário para horas, minutos e segundos.  
+c) Incorreta. O tipo `boolean` armazena apenas valores lógicos (true/false).  
+d) Incorreta. O tipo `String` armazena texto, não números.  
+e) Incorreta. O tipo `char` armazena caracteres individuais, o que não é adequado para representar tempo.
+
+---
+
+**Questão 14 (Nível: Lembrar)**  
+**Contexto:** Em um projeto de desenvolvimento de software, é fundamental entender como utilizar estruturas de controle para controlar o fluxo de execução de um programa.
+
+**Comando:** Identifique a alternativa que apresenta um exemplo correto de uma estrutura condicional em Java.
+
+**Alternativas:**
+a) `if (x > 10) { System.out.println("Maior que 10"); }`  
+b) `if [x > 10] { System.out.println("Maior que 10"); }`  
+c) `if x > 10 { System.out.println("Maior que 10"); }`  
+d) `if (x > 10) System.out.println("Maior que 10")`  
+e) `if (x > 10) { System.out.println("Maior que 10")`
+
+**Gabarito:** a
+
+**Justificativas:**
+a) Correta. Esta é a sintaxe correta de uma estrutura condicional em Java, com parênteses em torno da condição e chaves para o bloco de código.  
+b) Incorreta. A estrutura condicional em Java usa parênteses, não colchetes.  
+c) Incorreta. A condição precisa estar entre parênteses em Java.  
+d) Incorreta. Faltam as chaves no bloco de código, e a linha não termina com ponto e vírgula.  
+e) Incorreta. Faltam os pontos e vírgulas após as instruções dentro do bloco de código.
+
+---
+
+**Questão 15 (Nível: Aplicar ao Recordar)**  
+**Contexto:** Em uma aplicação de gerenciamento de pedidos, é necessário verificar se o valor total de um pedido excede um valor determinado para aplicar um desconto especial.
+
+**Comando:** Indique o trecho de código que aplica corretamente um desconto de 15% ao valor total de um pedido se ele for maior que R$ 500,00.
+
+**Alternativas:**
+a) `if (valorTotal > 500) { valorTotal = valorTotal - (valorTotal * 0.15); }`  
+b) `if (valorTotal > 500) { valorTotal = valorTotal + (valorTotal * 0.15); }`  
+c) `if (valorTotal > 500) { valorTotal = valorTotal / 0.85; }`  
+d) `if (valorTotal > 500) { valorTotal = valorTotal - 0.15; }`  
+e) `if (valorTotal > 500) { valorTotal = valorTotal * 1.15; }`
+
+**Gabarito:** a
+
+**Justificativas:**
+a) Correta. O código calcula 15% do valor total e subtrai este valor para aplicar o desconto.  
+b) Incorreta. Somar 15% ao valor total aumentaria o valor em vez de aplicar o desconto.  
+c) Incorreta. Dividir o valor total por 0.85 aumentaria o valor em vez de aplicar o desconto.  
+d) Incorreta. Subtrair 0.15 diretamente não aplicaria o desconto corretamente.  
+e) Incorreta. Multiplicar o valor por 1.15 aumentaria o valor total em 15%, em vez de aplicar o desconto.
+
+---
+
+Essas novas questões seguem o padrão solicitado, com contextos práticos relacionados ao uso de **Java** em situações profissionais, mantendo a coerência com os níveis da **Taxonomia de Bloom** (Lembrar, Entender e Aplicar ao Recordar).
